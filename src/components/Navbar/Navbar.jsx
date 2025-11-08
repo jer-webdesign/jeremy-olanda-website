@@ -15,7 +15,7 @@ const Navbar = ({ activeSection, navigateToSection, mobileMenuOpen, setMobileMen
 		<div className="nav-container">
 			<a className="nav-logo" href="#home" onClick={e => { e.preventDefault(); navigateToSection('home'); }} tabIndex={0} aria-label="Go to Home">
 				<img src="/dev_logo.png" alt="Developer Logo" />
-				<span className="nav-logo-text">Dev Portfolio</span>
+				<span className="nav-logo-text">Jer Portfolio</span>
 			</a>
 			<button
 				className="nav-toggle"
@@ -52,3 +52,4 @@ const Navbar = ({ activeSection, navigateToSection, mobileMenuOpen, setMobileMen
 );
 
 export default Navbar;
+
