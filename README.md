@@ -2,21 +2,6 @@
 
 A modern, responsive developer portfolio built with React and Vite, designed to showcase developer expertise through a professional and engaging interface.
 
----
-
-## 🚀 Latest Updates (2025)
-
-- **Frontend now fetches all data from a single `public/developer.json` file** for profile, projects, posts, hero, about, and skills (no backend API required for content display).
-- **Contact form uses [EmailJS](https://www.emailjs.com/)** for sending messages directly to your email (no backend required for contact form).
-- **No auto-reply is sent to visitors**—only you receive the contact notification.
-- **Ready for Vercel deployment**: Just connect your repo and set environment variables in the Vercel dashboard.
-- **Environment variables** for EmailJS are now required:
-  - `VITE_EMAILJS_SERVICE_ID`
-  - `VITE_EMAILJS_TEMPLATE_ID`
-  - `VITE_EMAILJS_PUBLIC_KEY`
-
----
-
 # Table of Contents
 - [Tech Stack](#tech-stack)
 - [Prerequisites](#prerequisites)
@@ -74,8 +59,6 @@ A modern, responsive developer portfolio built with React and Vite, designed to 
 ---
 
 # Developer Portfolio - Frontend
-
-A modern, responsive developer portfolio built with React and Vite, designed to showcase developer expertise through a professional and engaging interface.
 
 ## Portfolio Features
 
