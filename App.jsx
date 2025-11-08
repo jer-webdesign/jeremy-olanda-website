@@ -34,8 +34,10 @@ const App = () => {
 
   const fetchData = async () => {
     try {
-      const res = await fetch('/public/developer.json');
+      const res = await fetch('/developer.json');
       const data = await res.json();
+
+      console.log('Fetched data:', data);
       setProfile(data.profile || null);
       setProjects(data.projects || []);
       setPosts(data.posts || []);
