@@ -34,7 +34,7 @@ const App = () => {
 
   const fetchData = async () => {
     try {
-      const res = await fetch('/developer.json');
+      const res = await fetch('/public/developer.json');
       const data = await res.json();
       setProfile(data.profile || null);
       setProjects(data.projects || []);
