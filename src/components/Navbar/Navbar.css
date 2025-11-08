@@ -1,0 +1,245 @@
+/* Navbar Layout */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+  z-index: 50;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 64px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 64px;
+}
+
+
+/* Logo */
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.nav-logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+}
+/* Navbar Layout */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+  z-index: 50;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 64px;
+}
+
+
+/* Logo */
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+  transition: transform 220ms ease, filter 220ms ease, box-shadow 220ms ease;
+  background: transparent;
+  will-change: transform, filter;
+}
+
+/* Hover/focus target the inner img directly */
+.nav-logo:hover img,
+.nav-logo:focus img,
+.nav-logo:focus-visible img {
+  transform: translateY(-4px) scale(1.06);
+  /* combine visual tweaks and drop-shadow so PNG alpha is respected */
+  filter: brightness(1.05) saturate(1.05) drop-shadow(0 8px 30px rgba(139,92,246,0.28)) drop-shadow(0 0 26px rgba(99,102,241,0.18));
+}
+
+.nav-logo:focus-visible {
+  outline: 3px solid rgba(139,92,246,0.22);
+  outline-offset: 4px;
+}
+
+/* Text next to the logo */
+.nav-logo-text {
+  margin-left: 0.6rem;
+  color: #06b6d4; /* cyan */
+  -webkit-text-fill-color: #06b6d4; /* ensure not made transparent by parent */
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1;
+  display: inline-block;
+  transition: text-shadow 220ms ease, color 220ms ease;
+}
+
+.nav-logo:hover .nav-logo-text,
+.nav-logo:focus .nav-logo-text,
+.nav-logo:focus-visible .nav-logo-text {
+  text-shadow: 0 6px 18px rgba(6,182,212,0.22), 0 0 22px rgba(6,182,212,0.12);
+  color: #06b6d4; /* reinforce color on hover */
+  -webkit-text-fill-color: #06b6d4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-logo img {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+/* Add a subtle glowing text effect for the gradient logo text on hover/focus */
+.nav-logo:hover,
+.nav-logo:focus,
+.nav-logo:focus-visible {
+  text-shadow: 0 4px 18px rgba(139,92,246,0.28), 0 0 26px rgba(99,102,241,0.12);
+}
+
+/* Desktop Menu */
+.nav-menu {
+  display: flex;
+  gap: var(--spacing-xl);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Menu Item */
+.nav-item {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: var(--transition-normal);
+  cursor: pointer;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+}
+
+
+.nav-item:hover {
+  color: var(--color-primary);
+  background-color: rgba(139, 92, 246, 0.1);
+  transform: translateY(-1px);
+}
+
+
+.nav-item.active {
+  color: var(--color-primary);
+  background-color: rgba(139, 92, 246, 0.15);
+}
+
+
+/* Hamburger Toggle */
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  transition: var(--transition-normal);
+}
+
+.nav-toggle:hover {
+  background-color: rgba(139, 92, 246, 0.1);
+}
+
+@media (max-width: 767px) {
+  .nav-toggle {
+    display: block !important;
+  }
+  .nav-menu {
+    position: fixed;
+    top: 64px;
+    right: 0;
+    background: rgba(15,23,42,0.98);
+    height: calc(100vh - 64px);
+    width: 260px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+    gap: 1rem;
+    transform: translateX(100%);
+    transition: transform 0.28s ease;
+    box-shadow: -10px 0 30px rgba(2,6,23,0.6);
+  }
+  .nav-menu.open {
+    transform: translateX(0);
+    display: flex !important;
+  }
+  .nav-item {
+    width: 100%;
+  }
+}
+
+
+/* Roboto font for navbar */
+.nav, .nav-menu, .nav-item, .nav-logo {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+}
+
+/* Strong override: ensure the small logo label is visibly cyan even if parent
+   applies background-clip/text-fill tricks. Using !important to override
+   inherited -webkit-text-fill-color from .nav-logo. */
+.nav-logo-text {
+  color: #06b6d4 !important;
+  -webkit-text-fill-color: #06b6d4 !important;
+  background: none !important;
+  mix-blend-mode: normal !important;
+}
