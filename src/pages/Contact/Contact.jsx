@@ -19,8 +19,8 @@ const Contact = ({ contactForm, setContactForm, formStatus, handleContactSubmit,
             <span className="contact-tag" tabIndex={0} role="button" onClick={() => copyToClipboard && copyToClipboard('jeremy.g.olanda@gmail.com')}>
               📧 Email: <span className="contact-tag-highlight">jeremy.g.olanda@gmail.com</span>
             </span>
-            <span className="contact-tag" tabIndex={0} role="button" onClick={() => copyToClipboard && copyToClipboard('+1 (403) 987-6543')}>
-              📱 Phone: <span className="contact-tag-highlight">+1 (403) 987-6543</span>
+            <span className="contact-tag" tabIndex={0} role="button" onClick={() => copyToClipboard && copyToClipboard('+1 (403) 953-5027')}>
+              📱 Phone: <span className="contact-tag-highlight">+1 (403) 953-5027</span>
             </span>
             <span className="contact-tag">
               🌍 Location: <span className="contact-tag-highlight">Calgary, Alberta, Canada</span>
