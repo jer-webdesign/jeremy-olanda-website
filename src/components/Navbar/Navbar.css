@@ -89,8 +89,8 @@
 }
 
 .nav-logo img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   display: block;
   transition: transform 220ms ease, filter 220ms ease, box-shadow 220ms ease;
@@ -172,15 +172,23 @@
 
 
 .nav-item:hover {
-  color: var(--color-primary);
-  background-color: rgba(139, 92, 246, 0.1);
-  transform: translateY(-1px);
+  /* remove color shift; instead show an underline "highlight" and subtle background bar */
+  color: #38d8f5;
+  background-color: transparent;
+  transform: none;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #ff914d;
+  text-underline-offset: 6px;
+  /* optional subtle highlight behind the text */
+  background-image: linear-gradient(transparent 0%, transparent 70%, rgba(139,92,246,0.06) 70%, rgba(139,92,246,0.06) 100%);
+  transition: background-image 180ms ease, text-decoration-color 180ms ease;
 }
 
 
 .nav-item.active {
-  color: var(--color-primary);
-  background-color: rgba(139, 92, 246, 0.15);
+  color: #87eafc;
+  /* background-color: rgba(139, 92, 246, 0.15); */
 }
 
 

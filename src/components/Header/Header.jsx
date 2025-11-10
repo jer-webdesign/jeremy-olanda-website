@@ -3,9 +3,9 @@ import './Header.css';
 
 const Header = () => (
   <header className="header">
-    <div className="header-logo">
+    {/* <div className="header-logo">
       <img src="/dev_logo.png" alt="Logo" />
-    </div>
+    </div> */}
     <nav className="header-nav">
       <ul>
         <li><a href="#home">Home</a></li>

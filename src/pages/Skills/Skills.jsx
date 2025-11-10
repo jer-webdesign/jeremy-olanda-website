@@ -8,8 +8,9 @@ const Skills = ({ profile, skillCategories }) => {
 
   return (
     <section className="skills-section">
-      <h2 className="skill-section-title">Technical Skills</h2>
-      <div className="skills-grid">
+      <div className="skills-inner">
+        <h2 className="skill-section-title">Technical Skills</h2>
+        <div className="skills-grid">
         {validCategories.length > 0 ? (
           validCategories.map((category, index) => {
             // Split emoji and name if present
@@ -44,6 +45,7 @@ const Skills = ({ profile, skillCategories }) => {
             </div>
           </div>
         )}
+        </div>
       </div>
     </section>
   );

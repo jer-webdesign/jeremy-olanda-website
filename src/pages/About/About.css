@@ -1,14 +1,103 @@
+/* Two-column layout for Profile Bio card */
+.about-bio-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2.2rem;
+}
+
+.about-bio-flex .about-profile-pic-wrap {
+  flex: 0 0 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about-bio-flex .about-profile-pic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--primary);
+  box-shadow: 0 4px 24px rgba(37,99,235,0.13);
+  background: #fff;
+}
+
+.about-bio-flex .about-items {
+  flex: 1 1 0%;
+  min-width: 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (max-width: 700px) {
+  .about-bio-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .about-bio-flex .about-profile-pic-wrap {
+    margin-bottom: 0.5rem;
+  }
+  .about-bio-flex .about-items {
+    width: 100%;
+    justify-content: center;
+  }
+}
+/* Layout for profile image and about content */
+.about-main-flex {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.about-profile-pic-wrap {
+  flex: 0 0 180px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about-profile-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--primary);
+  box-shadow: 0 4px 24px rgba(37,99,235,0.13);
+  background: #fff;
+}
+
+@media (max-width: 800px) {
+  .about-main-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .about-profile-pic-wrap {
+    margin-bottom: 1.5rem;
+  }
+}
 
 .about-grid .about-card:first-child {
   min-height: 260px;
   padding: 3rem 2.5rem;
 }
 
-/* About Section Styles */
 .about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
   padding: 4rem 2rem;
-  max-width: 1200px;
+  min-height: 100vh;
+  max-width: 1900px;
   margin: 0 auto;
+  background: url('/AboutMe.jpg') center center/cover no-repeat fixed;
 }
 
 .about-section-title {
@@ -24,6 +113,34 @@
     letter-spacing: 0.025rem;
     word-spacing: 0.15em;
   }
+
+/* Lead line styling for the first about paragraph */
+.about-content .about-lead {
+  font-size: 1.15rem; /* slightly bigger */
+  color: #ff914d; /* requested color */
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+}
+
+@media (max-width: 700px) {
+  .about-content .about-lead {
+    font-size: 1.05rem;
+  }
+}
+
+/* Heading lines inside the about content */
+.about-content .about-heading {
+  font-size: 1.12rem;
+  color: #ff914d;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+@media (max-width: 700px) {
+  .about-content .about-heading {
+    font-size: 1.02rem;
+  }
+}
 
 .about-grid {
   display: flex;

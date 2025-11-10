@@ -1,0 +1,207 @@
+/*
+    Experience timeline styles
+    - precise margins, padding, colors and borders approximated from the provided screenshots
+*/
+
+:root {
+    --exp-title-color: #6b63ff; /* purple-blue */
+    --exp-company-orange: #ff914d;
+    --exp-card-bg: rgba(12,20,30,0.62);
+    --exp-card-border: rgba(255,255,255,0.04);
+    --exp-muted: rgba(210,220,255,0.55);
+}
+
+.experience-section {
+    padding: 4rem 0 6rem 0;
+    background-image: url('/skills.jpg');
+}
+
+.experience-section-title {
+    font-family: var(--font-family);    
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 3rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.experience-timeline {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 48px;
+}
+
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 32px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #3b7bff, #8a63ff);
+    border-radius: 2px;
+    z-index: 0;
+}
+
+.experience-item {
+    font-family: var(--title-font-family);
+    position: relative;
+    margin-bottom: 3.5rem;
+    background: var(--exp-card-bg);
+    border-radius: 18px;
+    border: 1px solid var(--exp-card-border);
+    box-shadow: 0 6px 40px rgba(7,20,40,0.55);
+    padding: 28px 30px;
+    transition: transform 0.25s ease, box-shadow 0.3s, border-color 0.3s;
+    min-width: 320px;
+    max-width: 560px;
+    z-index: 1;
+}
+
+.experience-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 48px rgba(7,20,40,0.65);
+    border-color: rgba(100,140,255,0.18);
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: -44px;
+    top: 32px;
+    width: 20px;
+    height: 20px;
+    background: #0f1720;
+    border: 5px solid #3b7bff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px rgba(8,12,18,0.9), 0 0 18px rgba(59,123,255,0.18);
+    z-index: 2;
+}
+
+@media (min-width: 900px) {
+    .experience-timeline {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        padding-left: 0;
+        align-items: start;
+    }
+
+    .experience-timeline::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .experience-item {
+        margin-bottom: 4.5rem;
+        min-width: 420px;
+        max-width: 560px;
+    }
+
+    .experience-item:nth-child(odd) {
+        grid-column: 1;
+        justify-self: end;
+    }
+
+    .experience-item:nth-child(even) {
+        grid-column: 2;
+        justify-self: start;
+    }
+
+    .experience-item::before {
+        left: auto;
+        right: -48px;
+        top: 32px;
+    }
+
+    .experience-item:nth-child(odd)::before {
+        left: -48px;
+        right: auto;
+    }
+}
+
+/* Date label that sits near the vertical line */
+.experience-date-label {
+    display: inline-block;
+    /* background: rgba(8,16,28,0.75); */
+    color: var(--exp-muted);
+    font-weight: 700;
+    font-size: 0.98rem;
+    /* padding: 0.38rem 1rem;  */
+    padding-left: 4rem;
+    border-radius: 10px;
+    /* box-shadow: 0 6px 18px rgba(7,20,40,0.5); */
+    margin-bottom: 0.8rem;
+    position: absolute;
+    top: 8px;
+    left: calc(50% + 22px);
+    /* transform: translateX(-50%); */
+    z-index: 3;
+}
+
+@media (max-width: 899px) {
+    .experience-date-label {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-left: 0;
+        margin-bottom: 12px;
+    }
+}
+
+/* Company and role styling to match screenshot */
+.experience-company {
+    color: var(--exp-company-orange);
+    font-weight: 800;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+}
+
+.experience-job-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.experience-duration {
+    color: var(--exp-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+}
+
+.experience-location {
+    color: rgba(210,220,255,0.45);
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.experience-role-description {
+    color: rgba(210,220,255,0.75);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+/* Responsibilities bullets -> small orange sparkles like screenshots */
+.experience-responsibilities {
+    margin: 0;
+    padding-left: 1.1rem;
+}
+.experience-responsibilities li {
+    color: rgba(210,220,255,0.75);
+    margin-bottom: 0.6rem;
+    position: relative;
+    padding-left: 1.4rem;
+}
+.experience-responsibilities li::before {
+    content: '✨';
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-2px);
+    color: #ffb457;
+}
+
+

@@ -74,6 +74,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url('/skills.jpg');
 }
 
 @media (min-width: 600px) {
@@ -141,7 +142,7 @@
 
 .contact-section {
   /* min-height: 100vh; */
-  max-width: 1300px;
+  max-width: 1900px;
   margin: 0 auto;
   background: var(--bg-dark, #0f172a);
   box-sizing: border-box;
@@ -149,6 +150,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url('/skills.jpg');
 }
 
 .contact-section-title {
@@ -184,7 +186,7 @@
 .contact-category {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #7191c9;
+  color: #ff914d;
   margin-bottom: 1rem;
 }
 

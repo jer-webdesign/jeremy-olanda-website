@@ -2,47 +2,202 @@
 .hero {
   min-height: 100vh;
   display: flex;
-  margin-top: 5rem;
+  margin-top: 0rem;
   text-align: center;
+  background: url('/main_background7.jpg') center center/cover no-repeat fixed;  
+  /* background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%); */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Code Background Container */
+.code-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* place overlay above hero::before (which is z-index:1 but earlier in DOM) */
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Animated Code Snippets */
+.code-snippet {
+  /* position: absolute;
+  padding: 0px; */
+  background: transparent; /*rgba(15, 23, 42, 0.9); */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); */
+  font-size: 2.25rem;
+  line-height: 1.6;
+  white-space: pre;
+  opacity: 1;
+  animation: fadeInOut 10s infinite;
+  /* backdrop-filter: blur(10px); */
+  font-family: 'Courier New', monospace;
+
+  /* blur amount applied only to inner text elements (see .code-snippet * below) */
+  --code-blur: 1.5px;
+  pointer-events: none;
+  z-index: 1;
+  color: #836752; 
+  -webkit-filter: blur(var(--code-blur));
+  filter: blur(var(--code-blur));
+  transition: filter 260ms ease, -webkit-filter 260ms ease;
+  /* color: #528083;  */
+  font-weight: 500;  
+}
+
+/* Apply blur only to the textual content inside .code-snippet (not the container) */
+.code-snippet * {
+  -webkit-filter: blur(var(--code-blur));
+  filter: blur(var(--code-blur));
+  transition: filter 260ms ease, -webkit-filter 260ms ease;
+  color: #528083;
+  font-weight: 500;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 1; }
+  10%, 90% { opacity: 1; }
+}
+
+/* Syntax Highlighting */
+.code-snippet .keyword { 
+  color: #528083; 
+  font-weight: bold; 
+}
+
+.code-snippet .function { 
+  color: #527d83; 
+}
+
+.code-snippet .string { 
+  color: #836752; 
+}
+
+.code-snippet .comment { 
+  color: #836752; 
+  font-style: italic; 
+}
+
+.code-snippet .number { 
+  color: #836752; 
+}
+
+.code-snippet .operator { 
+  color: #836752; 
+}
+
+.code-snippet .className { 
+  color: #836752; 
+}
+
+.code-snippet .variable { 
+  color: #836752; 
+}
+
+/* Overlay for background darkness */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero > .code-background {
+  z-index: 0;
+}
+
+.hero > .hero-content {
+  position: relative;
+  z-index: 2;
 }
 
 /* Hero Content */
 .hero-content {
   max-width: 900px;
   margin: 0 auto;
-  margin-top: 9rem;
+  margin-top: 14rem;
   z-index: 2;
   padding: 0 2rem;
   font-family: var(--font-family);
 }
 
 /* Hero Title */
-.hero-title {
-  font-family: var(--title-font-family);
-  font-size: clamp(3.5rem, 8vw, 4rem);
+/* .hero-title {
+  font-size: clamp(4.5rem, 9vw, 5rem);
   font-weight: 900;
   margin-bottom: 0.5rem;
-  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #06b6d4 100%);
+  background: linear-gradient(135deg, #3beaf6 0%, #16dcff 50%, #006964 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: glow 3s ease-in-out infinite alternate;
   letter-spacing: -0.02em;
   line-height: 1.1;
+} */
+
+/* Hero Title */
+.hero-title {
+  /* font-family: 'HK Modular', var(--title-font-family), sans-serif; */
+  position: relative; /* allow pseudo-elements if needed */
+  display: inline-block; /* shrink to text width for nicer shadows */
+  font-size: clamp(4.5rem, 9vw, 5rem);
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #3beaf6 0%, #16dcff 50%, #006964 100%);
+  background-clip: text;
+  color: transparent; /* keep gradient fill visible via background-clip */
+  /* 3D extrusion simulated with stacked text-shadows (many small offsets).
+     Add a subtle top highlight and reduce shadow opacities so the front appears lighter. */
+  text-shadow:
+    /* subtle top highlight to simulate front/top lighting */
+    0 -1px 0 rgba(120, 233, 248, 0.89),
+    /* softened extrusion layers (lighter opacities) */
+    0 1px 0 rgba(0, 40, 36, 1),
+    0 2px 0 rgba(0, 38, 34, 1),
+    0 3px 0 rgba(0, 36, 32, 1),
+    0 4px 0 rgba(4, 75, 67, 1),
+    /* softer blur/shadow for depth */
+    0 6px 4px rgba(3, 21, 41, 1),
+    0 12px 24px rgba(3, 19, 41, 1);
+  /* Keep the glow animation but slightly reduce intensity so shadows remain visible */
+  /* animation: glow 15s ease-in-out infinite alternate; */
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  -webkit-font-smoothing: antialiased;
+  transform: translateZ(0); /* promote to its own layer for smoother rendering */
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 10px rgba(59, 234, 246, 0.5));
+  }
+  to {
+    filter: drop-shadow(0 0 20px rgba(59, 234, 246, 0.8));
+  }
 }
 
 /* Hero Subtitle */
 .hero-subtitle {
   font-family: var(--font-family);
-  font-size: clamp(1.25rem, 3vw, 1.75rem);
-  font-weight: 700;
+  font-size: clamp(1.40rem, 3vw, 1.90rem);
+  font-weight: 1000;
   margin-bottom: 2rem;
-  color: #a0c2fd;
+  color: #ff914d;
   min-height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 /* Hero Description */
@@ -67,7 +222,6 @@
   margin-bottom: 1rem;
 }
 
-
 .profile-links .link {
   display: inline-flex;
   gap: 0.5rem;
@@ -75,8 +229,12 @@
   font-weight: 600;
   color: var(--secondary);
   text-decoration: underline;
+  transition: color 0.3s ease;
 }
 
+.profile-links .link:hover {
+  color: #3beaf6;
+}
 
 .social-icon {
   width: 1.1rem;
@@ -88,5 +246,238 @@
   transform: translateY(-1px);
 }
 
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
 
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
 
+.btn-primary {
+  background: linear-gradient(135deg, #3beaf6 0%, #16dcff 100%);
+  color: #0a0e27;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59, 234, 246, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #3beaf6;
+  color: #3beaf6;
+}
+
+.btn-secondary:hover {
+  background: rgba(59, 234, 246, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .code-snippet {
+    font-size: 11px;
+    padding: 10px;
+    max-width: 90vw;
+  }
+  
+  .hero-content {
+    margin-top: 10rem;
+    padding: 0 1rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .profile-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Image overlay animation */
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 58%;
+  right: 40%;
+  transform: translate(-50%, -50%);
+  /* keep the overlay centered but allow the image to scale inside without being cropped
+     use a slightly smaller max-size so the entire image can be seen within the hero area */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  pointer-events: none;
+  /* overlay-level variables */
+  --overlay-opacity: 0.5; /* max visible opacity for overlay images (can be overridden) */
+  overflow: visible; /* let the image breathe inside the overlay */
+}
+
+.zoom-image {
+  position: absolute; /* absolutely position so we can anchor to edges without being pushed */
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) scale(1);
+  /* use contain so the full image is visible (no clipping) */
+  max-width: 25%;
+  max-height: 76%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0;
+  /* default gentle zoom/fade (overridden by from-left/from-right) */
+  animation: zoomOut 5s ease-out forwards;
+  /* rounded corners, subtle border, inner highlight and glow */
+  border-radius: 14px;
+  border: 2px solid rgba(226, 226, 226, 0.9);
+  box-shadow: 0 12px 30px rgba(2, 12, 26, 0.6), /* deep soft shadow */
+              0 0 28px rgba(59, 234, 246, 0.06), /* cool subtle glow */
+              inset 0 1px 0 rgba(255,255,255,0.04); /* tiny top highlight */
+  filter: drop-shadow(0 10px 30px rgba(59,234,246,0.03));
+  transition: transform 400ms ease, box-shadow 400ms ease, opacity 300ms ease;
+  /* use CSS variable to control max opacity */
+  --overlay-opacity: inherit;
+  will-change: transform, opacity;
+}
+
+/* Slide animations: alternate entry from left or right into the center, then fade */
+.overlay-item {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  z-index: 1; /* ensure overlay items render above the dark pseudo-overlay */
+}
+
+/* Slide animations: alternate entry from left or right into the center, then fade */
+.zoom-image.from-left {
+  /* anchor to the left inside the hero so the image doesn't get pushed off-screen */
+  left: 0%;
+  right: 5%;
+  transform-origin: left center;
+  animation: zoomOutLeft 8s cubic-bezier(.22,.9,.27,1) forwards;
+}
+
+.zoom-image.from-right {
+  /* anchor to the right inside the hero so the image doesn't get pushed off-screen */
+  right: 15%;
+  left: auto;
+  transform-origin: right center;
+  animation: zoomOutRight 8s cubic-bezier(.22,.9,.27,1) forwards;
+}
+
+.overlay-item.left {
+  left: 4%;
+}
+.overlay-item.right {
+  right: 4%;
+}
+
+.overlay-item.left .zoom-image {
+  transform-origin: left center;
+  animation: zoomOutLeft 8s cubic-bezier(.22,.9,.27,1) forwards;
+}
+.overlay-item.right .zoom-image {
+  transform-origin: right center;
+  animation: zoomOutRight 8s cubic-bezier(.22,.9,.27,1) forwards;
+}
+
+.image-label {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  color: #e6eef2;
+  background: rgba(10,14,27,0.45);
+  padding: 0.35rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 6px 18px rgba(2,12,26,0.45);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+@keyframes zoomOutLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) scale(1.36);
+  }
+  10% {
+    opacity: var(--overlay-opacity);
+    transform: translateY(-50%) scale(1.12);
+  }
+  60% {
+    opacity: calc(var(--overlay-opacity) * 0.8);
+    transform: translateY(-50%) scale(1.02);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.98);
+  }
+}
+
+@keyframes zoomOutRight {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) scale(1.36);
+  }
+  10% {
+    opacity: var(--overlay-opacity);
+    transform: translateY(-50%) scale(1.12);
+  }
+  60% {
+    opacity: calc(var(--overlay-opacity) * 0.8);
+    transform: translateY(-50%) scale(1.02);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.98);
+  }
+}
+
+@keyframes zoomOut {
+  /* Start slightly zoomed-in and gently relax to a natural size so nothing is clipped */
+  0% {
+    opacity: 0;
+    transform: scale(1.18);
+  }
+  10% {
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.hero > .code-background {
+  z-index: 0;
+}

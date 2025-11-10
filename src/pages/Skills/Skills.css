@@ -1,10 +1,47 @@
 /* Skills Section Styles */
-.skills-section {
+/* .skills-section {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
   scroll-margin-top: 80px;
   min-height: 100vh;
+  position: relative;  */
+  /* background image (public/AboutMe.jpg) with SVG fallback */
+  /* background-image: url('/AboutMe.jpg'), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800'><rect width='100%25' height='100%25' fill='%23222'/><text x='50%25' y='50%25' font-size='36' fill='%23ff914d' font-family='Arial' text-anchor='middle' dominant-baseline='middle'>About%20Me</text></svg>"); */
+  /* background-position: center center, center center;
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, scroll;
+} */
+
+.skills-section {
+  width: 100%;
+  padding: 4rem 0;
+  scroll-margin-top: 80px;
+  min-height: 100vh;
+  position: relative;
+  background-image: url('/skills.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* dark overlay to keep text readable over the image */
+.skills-section::before {
+  content: '';
+  /* full-bleed section so background can cover the entire viewport */
+  width: 100%;
+  padding: 4rem 0; /* horizontal padding handled by inner container */
+  scroll-margin-top: 80px;
+  min-height: 100vh;
+  position: relative; /* for overlay */
+  /* background image (public/AboutMe.jpg) with SVG fallback */
+  /* background-image: url('/AboutMe.jpg'), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800'><rect width='100%25' height='100%25' fill='%23222'/><text x='50%25' y='50%25' font-size='36' fill='%23ff914d' font-family='Arial' text-anchor='middle' dominant-baseline='middle'>About%20Me</text></svg>"); */
+  background-position: center center, center center;
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, scroll;
 }
 
 .skill-section-title {  
@@ -13,6 +50,11 @@
   text-align: center;  
   color: var(--primary);
   font-family: var(--title-font-family);
+}
+.skills-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .skills-grid {
@@ -46,7 +88,7 @@
   font-size: 1.1rem;
   font-weight: 700;
   font-family: var(--font-family);
-  color: #7191c9;
+  color: #deeaff;
   margin-bottom: 1rem;
 }
 

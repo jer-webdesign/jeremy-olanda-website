@@ -6,7 +6,8 @@ const NAV_LINKS = [
 	{ id: 'about', label: 'About' },
 	{ id: 'skills', label: 'Skills' },
 	{ id: 'projects', label: 'Projects' },
-	{ id: 'blog', label: 'Blog' },
+	// { id: 'blog', label: 'Blog' },
+	{ id: 'experience', label: 'Experience' },
 	{ id: 'contact', label: 'Contact' }
 ];
 
@@ -14,8 +15,8 @@ const Navbar = ({ activeSection, navigateToSection, mobileMenuOpen, setMobileMen
 	<nav className="nav" id="nav" aria-label="Main navigation">
 		<div className="nav-container">
 			<a className="nav-logo" href="#home" onClick={e => { e.preventDefault(); navigateToSection('home'); }} tabIndex={0} aria-label="Go to Home">
-				<img src="/dev_logo.png" alt="Developer Logo" />
-				<span className="nav-logo-text">Jer Portfolio</span>
+				<img src="/jerfx_logo.png" alt="Developer Logo" />
+				{/* <span className="nav-logo-text">Jer Portfolio</span> */}
 			</a>
 			<button
 				className="nav-toggle"
@@ -52,4 +53,3 @@ const Navbar = ({ activeSection, navigateToSection, mobileMenuOpen, setMobileMen
 );
 
 export default Navbar;
-

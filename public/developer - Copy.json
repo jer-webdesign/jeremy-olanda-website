@@ -1,0 +1,273 @@
+{
+  "hero": {
+    "headline": "JEREMY OLANDA",
+    "subheadline": ["Software Developer", "Web Developer", "3D Artist", "Problem Solver"]    
+  },
+  "about": {
+    "title": "About Me",
+    "content": "I'm Jeremy Olanda, a software engineer with professional experience spanning firmware development, enterprise software engineering, Python automation, and modern web development. My career has taken me from developing firmware for hard disk drives at Fujitsu and Seagate Technology to building educational technology solutions at KooBits Learning, and now mastering cutting-edge web frameworks at Southern Alberta Institute of Technology. What drives me is solving complex technical problems that create real business value. Whether I'm saving companies $100K through strategic optimization, developing proprietary patents for data storage technology, or building secure web applications, I bring the same commitment to excellence and innovation that has earned me industry recognition including Seagate's Asian GM Award. I thrive on the intersection of deep technical expertise and practical solutions—combining my extensive background in low-level systems programming (C/C++, embedded firmware) with modern web technologies (React, Node.js, Python Flask) to architect robust, scalable applications. I thrive on the intersection of deep technical expertise and practical solutions—combining my extensive background in low-level systems programming (C/C++, embedded firmware) with modern web technologies (React, Node.js, Python Flask) to architect robust, scalable applications."
+   },
+  "skillCategories": [
+    {
+      "category": "🔥 PROGRAMMING LANGUAGES",
+      "skills": ["C/C++", "Java", "Python", "JavaScript"]
+    },
+    {
+      "category": "🌐 FRONT-END DEVELOPMENT",
+      "skills": ["React", "Vite", "Bootstrap", "Tailwind CSS", "Responsive Design"]
+    },
+    {
+      "category": "🛠 BACK-END DEVELOPMENT",
+      "skills": ["Node.js", "Flask", "Django", "RESTful APIs"]
+    },
+    {
+      "category": "🗄️ DATABASES",
+      "skills": ["PostgreSQL", "MySQL", "SQLite", "MongoDB"]
+    },
+    {
+      "category": "☁️ CLOUD DEVELOPMENT",
+      "skills": ["Google Drive API", "Google Firebase", "Strapi", "Render", "Vercel", "AWS"]
+    },
+    {
+      "category": "☁️ DEVELOPMENT TOOLS",
+      "skills": ["Swagger", "GitHub", "Eclipse IDE", "IntelliJ IDEA", "PyCharm"]
+    },
+    {
+      "category": "☁️ WEB TECHNOLOGIES",
+      "skills": ["Selenium", "WebDriver", "REST APIs", "JSON"]
+    }
+  ],
+  "profile": {
+    "id": 1,
+    "name": "JEREMY OLANDA",
+    "bio": "Software Engineer skilled across the development lifecycle from coding and testing to deployment and backend operations. Currently expanding expertise in modern web frameworks at Southern Alberta Institute of Technology. Demonstrated success delivering efficient, cost-optimized solutions while leading diverse technical teams and enhancing large-scale systems for global enterprises. Driven by a commitment to solving intricate technical problems through innovative, human-centered design.",
+    "skills": ["C/C++", "Java", "Python", "JavaScript", "React", "Node.js", "Express", "PostgreSQL", "MongoDB", "Docker", "AWS", "Git", "RESTful APIs", "Agile Development"],
+    "github": "https://github.com/jer-webdesign",
+    "linkedin": "https://www.linkedin.com/in/jeremy-garcia-olanda/",
+    "email": "jeremy.g.olanda@gmail.com",
+    "location": "Calgary, Alberta, Canada"
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Cost Optimization Leadership (Seagate Technology International)",
+      "description": "Developed strategic implementation plan that saved SGD $100K by optimizing Blaze Advisor Agent software upgrade from FICO Singapore for failed drive disposition processes.",
+      "image": null,
+      "technologies": ["Blaze Advisor Agent software", "Java", "Oracle"],
+      "liveDemo": null,
+      "githubRepo": null,
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Patent Development (Seagate Technology International)",
+      "description": "Served as Lead Programmer for proprietary Patent of Head Degradation Characterization for Data Storage Device, contributing to company's intellectual property portfolio.",
+      "image": null,      
+      "technologies": ["C/C++", "Data Storage Device"],
+      "liveDemo": "https://patents.google.com/patent/US7240250",
+      "githubRepo": null,
+      "featured": true
+    },
+        {
+      "id": 3,
+      "title": "Industry Recognition (Seagate Technology International)",
+      "description": "Earned 2nd Quarter FY 2004 Asian GM Award for developing Head Instability Test for Data Storage Device, recognizing exceptional technical innovation.",
+      "image": null,      
+      "technologies": ["C/C++", "Data Storage Device"],
+      "liveDemo": null,
+      "githubRepo": null,
+      "featured": true
+    },   
+        {
+      "id": 4,
+      "title": "Technical Innovation (ams-OSRAM AG)",
+      "description": "Python script development for Electro-Optical setup, characterization and data analysis systems, enabling advanced automation and precision testing capabilities.",
+      "image": null,      
+      "technologies": ["Python", "Pandas", "Numpy", "PyQt5", "Matplotlib"],
+      "liveDemo": null,
+      "githubRepo": null,
+      "featured": true
+    },   
+        {
+      "id": 5,
+      "title": "Educational Awards & Certificate Automation System (Koobits E-Learning Pte. Ltd.)",
+      "description": "Automated After Effects workflows for Educational Awards Videos and certificate creation.",
+      "image": null,      
+      "technologies": ["Python", "After Effects scripts"],
+      "liveDemo": null,
+      "githubRepo": null,
+      "featured": true
+    },      
+        {
+      "id": 6,
+      "title": "Automated Text-to-Speech Video Production System (Koobits E-Learning Pte. Ltd.)",
+      "description": "Created automation solutions for text-to-speech video asset production, enhancing efficiency and scalability.",
+      "image": null,      
+      "technologies": ["Python", "Eleven Labs AI API", "PyQt5"],
+      "liveDemo": null,
+      "githubRepo": null,
+      "featured": true
+    },                 
+    {
+      "id": 7,
+      "title": "Developer Portfolio Platform",
+      "description": "A secure HTTPS portfolio platform showcasing projects, skills, and achievements with SSL encryption and comprehensive security headers",
+      "image": null,      
+      "technologies": ["React", "Node.js", "Express", "HTTPS", "Helmet.js", "SSL/TLS"],
+      "liveDemo": "https://localhost:5173",
+      "githubRepo": "https://github.com/jer-webdesign/dev-portfolio",
+      "featured": true
+    },
+    {
+      "id": 8,
+      "title": "E-Commerce Bookstore Platform",
+      "description": "Visbook is a modern, responsive online bookstore developed to showcase and sell visual graphics books. The application is designed to deliver a seamless user experience for browsing, searching, and purchasing books related to visual arts, design, and graphics. The platform integrates with STRAPI Cloud for content management and Firebase for authentication and order management, following best practices for modern web development.",
+      "image": "visbook.png",
+      "technologies": ["Node.js", "React", "Vite", "React Router", "STRAPI Cloud (Headless CMS, PostgreSQL)", "Firebase", "Firestore Database", "SendGrid", "Custom modular CSS"],
+      "liveDemo": "https://visbook.vercel.app/",
+      "githubRepo": "https://github.com/jer-webdesign/visbook_strapi",
+      "featured": true
+    },
+    {
+      "id": 9,
+      "title": "Widget Dashboard",
+      "description": "A modern, interactive dashboard built with React and Vite featuring drag-and-drop widgets with real-time data from various APIs. The dashboard provides a customizable interface for weather information, programming trivia, movie recommendations, and word definitions.",
+      "image": null,      
+      "technologies": ["HTML5", "CSS3", "JavaScript (ES6+)", "React", "Vite", "React DnD", "Material-UI Icons"],
+      "liveDemo": "https://widget-dashboard-kappa.vercel.app/",
+      "githubRepo": "https://github.com/jer-webdesign/widget_dashboard",
+      "featured": true
+    },
+    {
+      "id": 10,
+      "title": "Weather Analytics Dashboard",
+      "description": "Real-time weather monitoring and analytics with interactive data visualization and historical trend analysis",
+      "image": null,      
+      "technologies": ["Python Flask (backend server)", "PyScript", 
+      "HTML5", "CSS3", "Font Awesome", "Open-Meteo API", "Countries Now API"],
+      "liveDemo": "https://vercel-flask-weather-forecast.vercel.app/",
+      "githubRepo": "https://github.com/jer-webdesign/vercel_flask_weather_forecast",
+      "featured": false
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "position": "Senior Python Developer",
+      "company": "Koobits Learning Pte Ltd.",
+      "location": "50 MacPherson Road Amazana, #05-01, 348471, Singapore",
+      "website": "https://www.koobits.com/",
+      "startDate": "2022-06",
+      "endDate": "2024-04",
+      "role": "Led Python development initiatives for educational technology solutions, focusing on automation, multimedia processing, and workflow optimization.",
+      "responsibilities": [        
+        "Utilized OpenCV and PIL for advanced image processing and OCR capabilities.",
+        "Developed Blender plug-ins and automated After Effects workflows.",
+        "Created automation solutions for high-volume asset production.",
+        "Streamlined multimedia data management processes."
+      ]
+    },
+    {
+      "id": 2,
+      "position": "Python Developer / Senior Software Engineer",
+      "company": "ams-OSRAM AG",
+      "location": "7000 Ang Mo Kio Avenue 5, #03-00, S(569877), Singapore",
+      "website": "https://ams-osram.com/",
+      "startDate": "2017-08",
+      "endDate": "2022-05",
+      "role": "Specialized in data analysis, automation solutions, and legacy system modernization for new product research and development projects.",
+      "responsibilities": [        
+        "Comprehensive data mining and visualization using Python libraries.",
+        "Automation solutions for R&D equipment and devices.",
+        "Legacy C/C++ to Python conversion for faster testing",
+        "Device inventory management with Pandas and SQLite."
+      ]
+    },
+    {
+      "id": 3,
+      "position": "Senior Software Firmware Engineer",
+      "company": "Seagate Technology International",
+      "location": "90 Woodlands Avenue 7 (S)737911, Singapore",
+      "website": "https://www.seagate.com",
+      "startDate": "2007-10",
+      "endDate": "2016-06",
+      "role": "Multi-role technical leadership spanning Python, Java, and C/C++ development for enterprise storage solutions.",
+      "responsibilities": [        
+        "Python testing of proprietary storage software.",
+        "Java enhancement for failed drive disposition monitoring.",
+        "C/C++ development for Serial Diagnostic Interface.",
+        "Mentored engineers across multiple international sites."
+      ]
+    },
+    {
+      "id": 4,
+      "position": "Software Firmware Engineer II",
+      "company": "Seagate Technology International",
+      "location": "7000 Ang Mo Kio Avenue 5, S(569877), Singapore",
+      "website": "https://www.seagate.com",
+      "startDate": "2001-01",
+      "endDate": "2007-09",
+      "role": "Specialized in C/C++ software development for high-end storage products and analysis systems.",
+      "responsibilities": [        
+        "Process and Failure Analysis Testing software development.",
+        "SCSI/Fiber/SAS High-End Products software.",
+        "Quality assurance and testing protocols."
+      ]
+    },
+    {
+      "id": 5,
+      "position": "Firmware Engineer I & II",
+      "company": "Fujitsu Computer Products Corporation of the Philippines (FCPP)",
+      "location": "Carmelray Canlubang Laguna, Philippines (Closed)",
+      "website": "https://global.fujitsu/en-apac",
+      "startDate": "1996-05",
+      "endDate": "2000-12",
+      "role": "Foundation experience in firmware development and testing for hard disk drive systems.",
+      "responsibilities": [        
+        "C++ code development for Firmware Analysis Software.",
+        "Test tools for Fujitsu ATA HDD systems.",
+        "Compatibility evaluation and quality assurance."
+      ]
+    }             
+  ],
+
+
+  "posts": [
+    {
+      "id": 1,
+      "title": "Building Secure HTTPS Servers with Node.js",
+      "excerpt": "Learn how to implement SSL/TLS encryption, security headers, and best practices for building secure web applications",
+      "content": "In this comprehensive tutorial, we explore creating secure HTTPS servers using Node.js and Express. We cover SSL certificate generation with OpenSSL, implementing security headers with Helmet.js, and designing effective cache control strategies. This article demonstrates real-world security practices essential for modern web development.",
+      "author": "Jeremy Olanda",
+      "publishDate": "2024-10-10",
+      "tags": ["security", "nodejs", "https", "ssl", "web-development"]
+    },
+    {
+      "id": 2,
+      "title": "Mastering Cache Control Strategies for Web Performance",
+      "excerpt": "Deep dive into HTTP caching mechanisms, stale-while-revalidate patterns, and performance optimization techniques",
+      "content": "Effective caching is crucial for web performance. This article explores different cache control strategies including public vs private caching, stale-while-revalidate patterns, and how to implement cache-friendly API designs. Learn how to balance performance with security considerations.",
+      "author": "Jeremy Olanda",
+      "publishDate": "2024-10-05",
+      "tags": ["performance", "caching", "http", "optimization", "api-design"]
+    },
+    {
+      "id": 3,
+      "title": "React Performance Optimization: Beyond the Basics",
+      "excerpt": "Advanced techniques for optimizing React applications including memoization, code splitting, and rendering optimization",
+      "content": "Moving beyond basic React patterns, this tutorial covers advanced performance optimization techniques. We explore React.memo, useMemo, useCallback, code splitting with dynamic imports, and virtual scrolling for large datasets. Practical examples demonstrate measurable performance improvements.",
+      "author": "Jeremy Olanda",
+      "publishDate": "2024-09-28",
+      "tags": ["react", "performance", "optimization", "frontend", "javascript"]
+    },
+    {
+      "id": 4,
+      "title": "Full-Stack Development with Express and PostgreSQL",
+      "excerpt": "Building scalable backend services with proper database design, error handling, and API architecture",
+      "content": "This comprehensive guide covers building production-ready backend services using Express.js and PostgreSQL. Topics include database schema design, connection pooling, error handling middleware, input validation, and implementing RESTful API principles for maintainable applications.",
+      "author": "Jeremy Olanda",
+      "publishDate": "2024-09-20",
+      "tags": ["backend", "postgresql", "express", "api", "database"]
+    }
+  ]
+}

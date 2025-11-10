@@ -13,14 +13,14 @@
 :root {
   /* Typography */
   --title-font-family: Arial, Helvetica, sans-serif;
-  --font-family: Arial, Helvetica, sans-serif;
+  --font-family: Helvetica, Arial, sans-serif;
   --line-height: 1.5;
   --font-weight: 400;
   
   /* Colors - Updated to match reference style.css */
-  --primary: #2563eb;                 
-  --primary-dark: #1d4ed8;            
-  --secondary: #8b5cf6;               
+  --primary: #5fe7ff;                 
+  --primary-dark: #05576b;            
+  --secondary: #3f90a8;               
   --bg-dark: #0f172a;                 
   --bg-card: #1e293b;                 
   --text-light: #f8fafc;              
@@ -29,9 +29,9 @@
   --warning: #f59e0b;                 
   
   /* Legacy colors for backward compatibility */
-  --color-primary: #a78bfa;           
-  --color-primary-light: #c4b5fd;     
-  --color-primary-dark: #8b5cf6;      
+  --color-primary: #8bcefa;           
+  --color-primary-light: #b5e0fd;     
+  --color-primary-dark: #34a0bb;      
   --color-secondary: #f472b6;         
   --color-secondary-light: #f9a8d4;   
   --color-secondary-dark: #ec4899;    
@@ -39,7 +39,7 @@
   /* Backgrounds - Matching original slate theme */
   --bg-primary: #0f172a;              
   --bg-secondary: #1e293b;            
-  --bg-gradient: linear-gradient(135deg, #0f172a 0%, #6b46c1 50%, #0f172a 100%);
+  --bg-gradient: linear-gradient(135deg, #0f172a 0%, #46afc1 50%, #0f172a 100%);
   
   /* Text Colors - Matching original */
   --text-primary: #ffffff;            

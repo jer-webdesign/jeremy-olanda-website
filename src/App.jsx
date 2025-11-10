@@ -6,7 +6,8 @@ import Home from './pages/Home/Home.jsx';
 import About from './pages/About/About.jsx';
 import Skills from './pages/Skills/Skills.jsx';
 import Projects from './pages/Projects/Projects.jsx';
-import Blog from './pages/Blog/Blog.jsx';
+import Experience from './pages/Experience/Experience.jsx';
+// import Blog from './pages/Blog/Blog.jsx';
 import Contact from './pages/Contact/Contact.jsx';
 
 // Import components
@@ -18,7 +19,8 @@ import Footer from './components/Footer/Footer.jsx';
 const App = () => {
   const [profile, setProfile] = useState(null);
   const [projects, setProjects] = useState([]);
-  const [posts, setPosts] = useState([]);
+  const [experience, setExperience] = useState([]);
+  // const [posts, setPosts] = useState([]);
   const [hero, setHero] = useState(null);
   const [about, setAbout] = useState(null);
   const [skillCategories, setSkillCategories] = useState([]);
@@ -38,7 +40,8 @@ const App = () => {
       const data = await res.json();
       setProfile(data.profile || null);
       setProjects(data.projects || []);
-      setPosts(data.posts || []);
+      setExperience(data.experience || []);
+      // setPosts(data.posts || []);
       setHero(data.hero || null);
       setAbout(data.about || null);
       setSkillCategories(data.skillCategories || []);
@@ -53,10 +56,11 @@ const App = () => {
         linkedin: "https://linkedin.com/in/jeremyolanda"
       });
       setProjects([]);
-      setPosts([]);
+      // setPosts([]);
       setHero(null);
       setAbout(null);
       setSkillCategories([]);
+      setExperience([]);
       setLoading(false);
     }
   };
@@ -199,9 +203,12 @@ const App = () => {
       {activeSection === 'projects' && (
         <Projects projects={projects} />
       )}
-      {activeSection === 'blog' && (
-        <Blog posts={posts} />
+      {activeSection === 'experience' && (
+        <Experience experience={experience} />
       )}
+      {/* {activeSection === 'blog' && (
+        <Blog posts={posts} />
+      )} */}
       {activeSection === 'contact' && (
         <Contact 
           contactForm={contactForm} 
@@ -239,6 +246,5 @@ const App = () => {
     </div>
   );
 };
-
 
 export default App;
