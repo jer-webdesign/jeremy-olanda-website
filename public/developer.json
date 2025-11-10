@@ -76,7 +76,7 @@
     {
       "id": 1,
       "title": "Cost Optimization Leadership (Seagate Technology International)",
-      "description": "Developed strategic implementation plan that saved SGD $100K by optimizing Blaze Advisor Agent software upgrade from FICO Singapore for failed drive disposition processes.",
+      "description": "As a Java developer, I developed a strategic implementation plan that saved SGD $100K by optimizing the Blaze Advisor Agent software upgrade from FICO Singapore for failed drive disposition processes.",
       "image": "fico_blaze_advisor.png",
       "technologies": ["Blaze Advisor Agent software", "Java", "Oracle"],
       "liveDemo": null,
@@ -86,7 +86,7 @@
     {
       "id": 2,
       "title": "Patent Development (Seagate Technology International)",
-      "description": "Served as Lead Programmer for proprietary Patent of Head Degradation Characterization for Data Storage Device, contributing to company's intellectual property portfolio.",
+      "description": "As Lead Programmer for proprietary Patent of Head Degradation Characterization for Data Storage Device, I contributed to the company's intellectual property portfolio.",
       "image": "US_Patent.png",      
       "technologies": ["C/C++", "Data Storage Device"],
       "liveDemo": "https://patents.google.com/patent/US7240250",
@@ -96,7 +96,7 @@
         {
       "id": 3,
       "title": "Industry Recognition (Seagate Technology International)",
-      "description": "Earned 2nd Quarter FY 2004 Asian GM Award for developing Head Instability Test for Data Storage Device, recognizing exceptional technical innovation.",
+      "description": "As a C++ developer, I earned the 2nd Quarter FY 2004 Asian GM Award for developing the Head Instability Test for Data Storage Device, recognizing exceptional technical innovation.",
       "image": "asia_gm_award.png",      
       "technologies": ["C/C++", "Data Storage Device"],
       "liveDemo": null,
@@ -106,7 +106,7 @@
         {
       "id": 4,
       "title": "Technical Innovation (ams-OSRAM AG)",
-      "description": "Python script development for Electro-Optical setup, characterization and data analysis systems, enabling advanced automation and precision testing capabilities.",
+      "description": "As a Python developer, I contributed to the development of Python scripts for Electro-Optical setup, characterization and data analysis systems, enabling advanced automation and precision testing capabilities.",
       "image": "prometric.png",      
       "technologies": ["Python", "Pandas", "Numpy", "PyQt5", "Matplotlib"],
       "liveDemo": null,
@@ -116,7 +116,7 @@
         {
       "id": 5,
       "title": "Educational Awards & Certificate Automation System (Koobits E-Learning Pte. Ltd.)",
-      "description": "Automated After Effects workflows for Educational Awards Videos and certificate creation.",
+      "description": "As a Python developer, I automated After Effects workflows for Educational Awards Videos and certificate creation.",
       "image": "Koobits_awards.png",      
       "technologies": ["Python", "After Effects scripts"],
       "liveDemo": null,
@@ -126,7 +126,7 @@
         {
       "id": 6,
       "title": "Automated Text-to-Speech Video Production System (Koobits E-Learning Pte. Ltd.)",
-      "description": "Created automation solutions for text-to-speech video asset production, enhancing efficiency and scalability.",
+      "description": "As a Python developer, I created automation solutions for text-to-speech video asset production, enhancing efficiency and scalability.",
       "image": "childrens_video.png",      
       "technologies": ["Python", "Eleven Labs AI API", "PyQt5"],
       "liveDemo": null,
@@ -136,7 +136,7 @@
     {
       "id": 7,
       "title": "Developer Portfolio Platform",
-      "description": "A secure HTTPS portfolio platform showcasing projects, skills, and achievements with SSL encryption and comprehensive security headers",
+      "description": "As a Backend developer, I created a secure HTTPS portfolio platform showcasing projects, skills, and achievements with SSL encryption and comprehensive security headers",
       "image": "dev_portfolio_platform.png",      
       "technologies": ["React", "Node.js", "Express", "HTTPS", "Helmet.js", "SSL/TLS"],
       "liveDemo": null,
@@ -146,7 +146,7 @@
     {
       "id": 8,
       "title": "E-Commerce Bookstore Platform",
-      "description": "Visbook is a modern, responsive online bookstore developed to showcase and sell visual graphics books. The application is designed to deliver a seamless user experience for browsing, searching, and purchasing books related to visual arts, design, and graphics.", 
+      "description": "As a Full-stack developer, I contributed to Visbook, a modern, responsive online bookstore developed to showcase and sell visual graphics books. The application is designed to deliver a seamless user experience for browsing, searching, and purchasing books related to visual arts, design, and graphics.",
       "image": "visbook.png",
       "technologies": ["Node.js", "React", "Vite", "React Router", "STRAPI Cloud (Headless CMS, PostgreSQL)", "Firebase", "Firestore Database", "SendGrid", "Custom modular CSS"],
       "liveDemo": "https://visbook.vercel.app/",
@@ -156,7 +156,7 @@
     {
       "id": 9,
       "title": "Widget Dashboard",
-      "description": "A modern, interactive dashboard built with React and Vite featuring drag-and-drop widgets with real-time data from various APIs. The dashboard provides a customizable interface for weather information, programming trivia, movie recommendations, and word definitions.",
+      "description": "As a Frontend developer, I built a modern, interactive dashboard with React and Vite featuring drag-and-drop widgets with real-time data from various APIs. The dashboard provides a customizable interface for weather information, programming trivia, movie recommendations, and word definitions.",
       "image": "widget_dashboard.png",
       "technologies": ["HTML5", "CSS3", "JavaScript (ES6+)", "React", "Vite", "React DnD", "Material-UI Icons"],
       "liveDemo": "https://widget-dashboard-kappa.vercel.app/",
@@ -166,7 +166,7 @@
     {
       "id": 10,
       "title": "Weather Analytics Dashboard",
-      "description": "Real-time weather monitoring and analytics with interactive data visualization and historical trend analysis",
+      "description": "As a Backend developer, I implemented real-time weather monitoring and analytics with interactive data visualization and historical trend analysis.",
       "image": "weather_forecast.png",      
       "technologies": ["Python Flask (backend server)", "PyScript", 
       "HTML5", "CSS3", "Font Awesome", "Open-Meteo API", "Countries Now API"],
