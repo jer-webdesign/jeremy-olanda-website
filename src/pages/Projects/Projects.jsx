@@ -78,9 +78,7 @@ const Projects = ({ projects }) => {
           />
         );
       })()}
-      <div className="carousel-background-overlay"></div>
-      
-      <div className="carousel-container">
+     <div className="carousel-container">
         <div className="carousel-header">
           <h2 className="carousel-title">Top Projects</h2>
         </div>
@@ -134,8 +132,16 @@ const Projects = ({ projects }) => {
               )}
             </div>
           </div>
+        </div>
 
-          <div className="carousel-cards-container">
+
+
+
+
+     </div>      
+     <div className="carousel-background-overlay">
+     </div>    
+     <div className="carousel-cards-container">
             {/* Side navigation buttons positioned beside the carousel cards */}
             <div className="carousel-nav-side left">
               <button onClick={prevProject} className="carousel-nav-btn side" aria-label="Previous">
@@ -197,23 +203,19 @@ const Projects = ({ projects }) => {
                 );
               })}
             </div>
-          </div>
-        </div>
-
-
-
-        <div className="carousel-dots">
-          {projects.map((_, idx) => (
-            <button
-              key={idx}
-              className={`dot ${idx === activeIndex ? 'active' : ''}`}
-              onClick={() => setActiveIndex(idx)}
-              aria-label={`Go to project ${idx + 1}`}
-            />
-          ))}
-        </div>
-      </div>
+            {/* <div className="carousel-dots">
+              {projects.map((_, idx) => (
+                <button
+                  key={idx}
+                  className={`dot ${idx === activeIndex ? 'active' : ''}`}
+                  onClick={() => setActiveIndex(idx)}
+                  aria-label={`Go to project ${idx + 1}`}
+                />
+              ))}
+            </div>             */}
+     </div>
     </section>
+    
   );
 };
 

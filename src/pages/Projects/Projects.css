@@ -3,7 +3,7 @@
   /* use the site's primary UI font (same as Home) */
   font-family: var(--font-family);
   min-height: 85vh;
-  padding: 20rem 0rem 2rem 2rem;
+  padding: 10rem 0rem 2rem 2rem;
   position: relative;
   overflow: hidden;
 }
@@ -105,10 +105,10 @@
   pointer-events: auto;
 }
 .carousel-nav-side.left {
-  left: -18rem;
+  left: 11.5rem;
 }
 .carousel-nav-side.right {
-  right: 12px;
+  right: 11.5rem;
 }
 .carousel-nav-btn.side {
   width: 44px;
@@ -244,17 +244,19 @@
 
 /* Carousel Cards */
 .carousel-cards-container {
-  position: relative;
-  /* height: 220px; */
+  /* place cards above the content and overlays without moving JSX */
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* anchor from the bottom so cards sit visually below the info block */
+  bottom: 8rem;
   perspective: 1000px;
-  /* center cards horizontally and align to the bottom of the grid cell */
-  margin-top: 0;
   display: flex;
   align-items: flex-end; /* push cards to bottom */
   justify-content: center; /* center horizontally */
-  align-self: end; /* align to bottom of grid row */
-  justify-self: center; /* horizontal center in grid cell */
   width: 100%;
+  z-index: 60; /* above .carousel-container (z-index:1) and overlays */
+  pointer-events: auto;
 }
 
 .carousel-cards {
@@ -380,7 +382,7 @@
 
   .carousel-cards-container {
     height: 200px;
-    margin-top: 2rem;
+    bottom: 1.5rem;
   }
 
   .carousel-card {
@@ -414,7 +416,7 @@
 
   .carousel-cards-container {
     height: 180px;
-    margin-top: 1.5rem;
+    bottom: 1.25rem;
   }
 
   .carousel-card {
@@ -449,7 +451,7 @@
 
   .carousel-cards-container {
     height: 160px;
-    margin-top: 1.5rem;
+    bottom: 1rem;
   }
 
   .carousel-card {
