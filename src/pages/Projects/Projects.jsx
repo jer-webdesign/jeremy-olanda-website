@@ -122,7 +122,7 @@ const Projects = ({ projects }) => {
             <div className="project-actions">
               {activeProject.liveDemo && (
                 <a href={activeProject.liveDemo} target="_blank" rel="noopener noreferrer" className="action-btn primary">
-                  <ExternalLink size={18} /> Live Demo
+                  <ExternalLink size={18} /> Website URL
                 </a>
               )}
               {activeProject.githubRepo && (

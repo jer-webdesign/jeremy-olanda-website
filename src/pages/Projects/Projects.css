@@ -221,25 +221,25 @@
 }
 
 .action-btn.primary {
-  background: #2563eb;
+  background: #3f90a8;
   color: #ffffff;
 }
 
 .action-btn.primary:hover {
-  background: #1d4ed8;
+  background: #2d7085;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 8px 20px rgba(37, 189, 235, 0.4);
 }
 
 .action-btn.secondary {
-  background: rgba(139, 92, 246, 0.8);
+  background: #f87a2b;
   color: #ffffff;
 }
 
 .action-btn.secondary:hover {
-  background: rgba(124, 58, 237, 1);
+  background: #be6229;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 8px 20px rgba(170, 106, 53, 0.4);
 }
 
 /* Carousel Cards */
