@@ -159,7 +159,7 @@
       "description": "As a Frontend developer, I built a modern, interactive dashboard with React and Vite featuring drag-and-drop widgets with real-time data from various APIs. The dashboard provides a customizable interface for weather information, programming trivia, movie recommendations, and word definitions.",
       "image": "widget_dashboard.png",
       "technologies": ["HTML5", "CSS3", "JavaScript (ES6+)", "React", "Vite", "React DnD", "Material-UI Icons"],
-      "liveDemo": "https://widget-dashboard-kappa.vercel.app/",
+      "liveDemo": "https://widget-dashboard-jer-webdevs-projects.vercel.app/",
       "githubRepo": "https://github.com/jer-webdesign/widget_dashboard",
       "featured": true
     },
@@ -296,3 +296,4 @@
     }
   ]
 }
+
